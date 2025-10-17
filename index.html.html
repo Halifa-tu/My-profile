@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halifatu Yakubu | Cybersecurity & GRC Specialist</title>
+
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind Configuration must stay here for JIT CDN to work
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-light': '#F9FAFB', // Very Light Gray/Off-White
+                        'secondary-light': '#FFFFFF', // Pure White for content blocks
+                        'dark-text': '#1F2937', // Dark Gray for primary text
+                        'subtle-text': '#4B5563', // Slate for secondary text
+                        'accent-coral': '#EF4444', // Red 500 - Strong highlight color
+                        'accent-hover': '#DC2626', // Red 600
+                        'whatsapp-green': '#25D366',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="dp.css"> 
+</head>
+<body class="bg-primary-light text-dark-text font-sans antialiased">
+    
+    <header class="sticky top-0 z-50 bg-secondary-light/95 backdrop-blur-sm border-b border-gray-100 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#hero" class="text-xl font-bold tracking-wider text-accent-coral">HALIFATU FARR YAKUBU</a>
+            
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-accent-coral transition duration-200">About</a>
+                <a href="#skills" class="hover:text-accent-coral transition duration-200">Skills & GRC</a>
+                <a href="#projects" class="hover:text-accent-coral transition duration-200">Experience</a>
+                <a href="#contact" class="px-4 py-2 bg-accent-coral text-white font-semibold rounded-full hover:bg-accent-hover transition duration-200 shadow-md">Get In Touch</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-300">
+                <svg class="w-6 h-6 text-dark-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary-light/95 py-2 border-t border-gray-200">
+            <nav class="flex flex-col space-y-2 px-4 text-center font-medium">
+                <a href="#about" class="block py-2 rounded-md hover:bg-gray-100 transition duration-200">About</a>
+                <a href="#skills" class="block py-2 rounded-md hover:bg-gray-100 transition duration-200">Skills and GRC</a>
+                <a href="#projects" class="block py-2 rounded-md hover:bg-gray-100 transition duration-200">Experience</a>
+                <a href="#contact" class="block py-2 rounded-md bg-accent-coral text-white hover:bg-accent-hover transition duration-200">Get In Touch</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <section id="hero" class="relative py-20 md:py-32 flex flex-col-reverse md:flex-row items-center justify-between gap-12 overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-white">
+        
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute w-80 h-80 bg-purple-300/30 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
+            <div class="absolute w-64 h-64 bg-blue-400/20 rounded-full blur-3xl bottom-10 right-10 animate-ping"></div>
+        </div>
+
+        <div class="text-center md:text-left md:w-1/2">
+            <p class="text-indigo-600 font-semibold uppercase tracking-widest text-sm mb-4">CYBERSECURITY • PUBLIC SPEAKING • IT MANAGEMENT</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                I'm 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                    Halifatu Farr Yakubu
+                </span>
+            </h1>
+            <h2 class="text-xl sm:text-2xl text-indigo-600 font-medium mb-6" id="typing-text"></h2>
+            <p class="text-gray-700 text-base sm:text-lg leading-relaxed max-w-md mx-auto md:mx-0 mb-8">
+                Seeking an <b>entry-level role in Cybersecurity Analysis, SOC Operations, or IT Security</b> where I can apply my 
+                <b>analytical, technical, and communication</b> skills to help organizations strengthen their security posture 
+                and foster digital resilience.
+            </p>
+
+            <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                <a href="#contact" class="px-5 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-md hover:bg-indigo-700">Hire Me</a>
+                <a href="#projects" class="px-5 py-3 border border-indigo-500 text-indigo-600 font-semibold rounded-full hover:bg-indigo-50">View Work</a>
+                <a href="HALIFA'S RESUME.pdf" download class="px-5 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-md hover:from-blue-700 hover:to-indigo-700">Download CV</a>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+            <div class="relative group">
+                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-blue-500 opacity-70 blur-xl group-hover:opacity-100 transition"></div>
+                <div class="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                    <img src="HALIFA.jpg" alt="Halifatu Yakubu" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    onerror="this.onerror=null;this.src='https://placehold.co/320x320/F3F4F6/DC2626?text=Halifatu+Y.'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="relative py-24 bg-gradient-to-br from-indigo-50 via-white to-purple-50 overflow-hidden border-t border-b border-gray-100 shadow-inner">
+
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute w-96 h-96 bg-purple-300/30 rounded-full blur-3xl top-10 left-20 animate-pulse"></div>
+            <div class="absolute w-80 h-80 bg-blue-300/20 rounded-full blur-3xl bottom-0 right-16 animate-ping"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto text-center px-6">
+
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 animate-fadeIn">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                    ABOUT ME
+                </span>
+            </h2>
+
+            <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full mx-auto mb-10 animate-fadeIn delay-100"></div>
+
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed animate-fadeIn delay-200">
+                Hello! I’m <b>Halifatu Farr Yakubu</b>, a <b>First-Class graduate in Information Technology Management</b> from the 
+                <b>University of Professional Studies, Accra (UPSA)</b>. I’m deeply passionate about <b>cybersecurity, ethical hacking, and digital literacy</b>. 
+                I love exploring how systems work and how to make them stronger, safer, and more resilient.
+            </p>
+
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed animate-fadeIn delay-300">
+                I’ve completed the <b>Google Cybersecurity Professional Certificate</b> and hold <b>ISO/IEC 27001</b> and <b>ISO 9001</b> certifications. 
+                My hands-on experience spans <b>vulnerability assessments, penetration testing labs</b>, and an internship with 
+                <b>Coldsis Ghana Limited</b>, where I contributed to frontend development and data management projects.
+            </p>
+
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed animate-fadeIn delay-400">
+                As a <b>public speaker and former Women’s Commissioner for ITSA-UPSA</b>, I’ve organized cybersecurity awareness programs, 
+                led workshops, and delivered tech talks, making complex security concepts simple and relatable for different audiences.
+            </p>
+
+            <p class="text-lg text-gray-700 mb-10 leading-relaxed animate-fadeIn delay-500">
+                I’m now seeking an <b>entry-level role in Cybersecurity Analysis, SOC Operations, or IT Support</b> where I can apply my 
+                technical, analytical, and communication skills to help organizations strengthen their security posture and 
+                nurture a culture of cyber awareness.
+            </p>
+
+            <div class="flex justify-center gap-8 text-4xl text-indigo-600 mb-12 animate-fadeIn delay-600">
+                <div class="hover:scale-110 transition-transform">🔒</div>
+                <div class="hover:scale-110 transition-transform">💻</div>
+                <div class="hover:scale-110 transition-transform">🎤</div>
+            </div>
+
+            <div class="flex justify-center space-x-4 animate-fadeIn delay-700">
+                <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 hover:scale-105 transition-transform duration-300">
+                    View my projects
+                </a>
+                <a href="#contact" class="px-6 py-3 border border-indigo-500 text-indigo-600 font-semibold rounded-full hover:bg-indigo-50 hover:scale-105 transition-transform duration-300">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="skills" class="py-20">
+        <h2 class="text-3xl font-bold text-dark-text text-center mb-2">SKILLS AND GRC</h2>
+        <p class="text-lg font-light text-subtle-text text-center mb-12">Technical expertise supported by governance excellence.</p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-semibold text-dark-text mb-6 border-b pb-2 border-gray-200">Core Technical Capabilities</h3>
+                <ul class="grid grid-cols-2 gap-4 text-base font-medium text-subtle-text">
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">Security management</li>
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">Vulnerability assessment</li>
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">Network security</li>
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">OS Security (Windows/Linux)</li>
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">Data/Business Analysis (Power BI)</li>
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">Basic Programming (Python, HTML, CSS, Javascript)</li>
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">AWS foundational knowledge</li>
+                    <li class="flex items-center space-x-2 before:content-['▹'] before:text-accent-coral">Prompt engineering</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold text-dark-text mb-6 border-b pb-2 border-gray-200">GRC and Certifications</h3>
+                <ul class="grid grid-cols-1 gap-4 text-base font-medium text-subtle-text">
+                    <li class="flex items-start space-x-2 before:content-['▹'] before:text-accent-coral">
+                        <span class="font-bold text-dark-text">GRC Frameworks:</span> NIST CSF, NIST RMF, ISO/IEC 27001, COBIT, GDPR.
+                    </li>
+                    <li class="flex items-start space-x-2 before:content-['▹'] before:text-accent-coral">
+                        <span class="font-bold text-dark-text">Certificates:</span> Google Cybersecurity Professional, ISO/IEC 27001 Associate, ISO 9001 Associate.
+                    </li>
+                    <li class="flex items-start space-x-2 before:content-['▹'] before:text-accent-coral">
+                        <span class="font-bold text-dark-text">Threat Intelligence:</span> MITRE ATT&CK, CIS Critical Security Controls.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="relative py-24 bg-gradient-to-b from-blue-50 via-white to-purple-50 overflow-hidden">
+
+        <div class="absolute inset-0 -z-10 opacity-40">
+            <div class="absolute w-96 h-96 bg-purple-300 rounded-full blur-3xl top-20 left-10 animate-pulse"></div>
+            <div class="absolute w-80 h-80 bg-blue-300 rounded-full blur-3xl bottom-20 right-10 animate-ping"></div>
+        </div>
+
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-dark-text drop-shadow-md animate-fadeInUp">
+                💼 MY EXPERIENCE AND PROJECTS
+            </h2>
+            <p class="mt-4 text-lg text-subtle-text max-w-2xl mx-auto font-light">
+                As part of my <b>learning journey</b>, I gained hands-on experience by developing, testing, and leading the following cybersecurity and IT projects.
+            </p>
+        </div>
+
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 px-6">
+
+            <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:border-blue-400">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-2">WinInstall: a Windows Management Automation Tool</h3>
+                <p class="text-sm text-gray-500 mb-4">June 2025</p>
+                <p class="text-gray-700 mb-4">
+                    Developed a <b>Python and PowerShell-based automation tool</b> that installs, upgrades, and activates Windows and Microsoft Office applications. It also performs <b>system optimization, data backup, and software deployment</b> tasks.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Python</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">PowerShell</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Automation</span>
+                </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:border-blue-400">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-2">
+                    IT Guardian, Security and Support Chatbot
+                </h3>
+                <p class="text-sm text-gray-500 mb-4">October 2025</p>
+                <p class="text-gray-700 mb-4">
+                    I Designed and built an interactive <b>AI-powered IT Security & Support Chatbot</b> using 
+                    <b>Google’s Gemini API</b> and <b>Tailwind CSS</b>. The chatbot assists users with 
+                    <b>cybersecurity awareness, phishing detection, basic troubleshooting,</b> and <b>IT support guidance</b>. 
+                    Integrated smooth animations, dark/light theme toggle, and a responsive UI suitable for all devices.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">AI Integration</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Cybersecurity</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Frontend Development</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Tailwind CSS</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Gemini API</span>
+                </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:border-rose-400">
+                <h3 class="text-2xl font-semibold text-rose-700 mb-2">Student Portal Vulnerability Assessment</h3>
+                <p class="text-sm text-gray-500 mb-4">March 2025</p>
+                <p class="text-gray-700 mb-4">
+                    Conducted a <b>manual and automated vulnerability assessment</b> using <b>Nmap, Nikto, and OWASP ZAP</b>. Identified insecure configurations and delivered a detailed <b>risk report</b> with remediation recommendations.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full">Nmap</span>
+                    <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full">OWASP ZAP</span>
+                    <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full">SQLmap</span>
+                    <span class="px-3 py-1 bg-rose-100 text-rose-800 rounded-full">Nikto</span>
+                </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:border-purple-400">
+                <h3 class="text-2xl font-semibold text-purple-700 mb-2">Web Application Penetration Testing Labs</h3>
+                <p class="text-sm text-gray-500 mb-4">April 2025</p>
+                <p class="text-gray-700 mb-4">
+                    Practiced ethical hacking using <b>DVWA, Juice Shop, and TryHackMe</b> to exploit vulnerabilities like <b>XSS</b> and <b>SQL Injection</b>. Followed <b>OWASP Top 10</b> and documented responsible disclosure reports.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">Burp Suite</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">SQLmap</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">OWASP Juice Shop</span>
+                </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:border-green-400">
+                <h3 class="text-2xl font-semibold text-green-700 mb-2">Network Analysis & Incident Investigation</h3>
+                <p class="text-sm text-gray-500 mb-4">May 2025</p>
+                <p class="text-gray-700 mb-4">
+                    Investigated simulated <b>security incidents</b> using <b>Wireshark and netstat</b>. Captured and analyzed packets, identified <b>Indicators of Compromise</b>, and documented containment and escalation procedures.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Wireshark</span>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Incident Response</span>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Packet Analysis</span>
+                </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:border-orange-400">
+                <h3 class="text-2xl font-semibold text-orange-700 mb-2">Cybersecurity Awareness & Education Outreach</h3>
+                <p class="text-sm text-gray-500 mb-4">May 2025</p>
+                <p class="text-gray-700 mb-4">
+                    Led a <b>community outreach program</b> educating teachers and students on <b>phishing, password safety, and digital literacy</b> through presentations and interactive sessions.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">Public Speaking</span>
+                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">Cyber Awareness</span>
+                    <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">Education</span>
+                </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:border-yellow-400">
+                <h3 class="text-2xl font-semibold text-yellow-700 mb-2">Data Cleaning & Visualization in Power BI</h3>
+                <p class="text-sm text-gray-500 mb-4">February 2025</p>
+                <p class="text-gray-700 mb-4">
+                    Cleaned and transformed raw datasets using <b>Excel and Power BI</b> to create <b>interactive dashboards</b> and insights for decision-making.
+                </p>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full">Power BI</span>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full">Data Analysis</span>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full">Visualization</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 flex flex-col items-center text-center">
+        <h2 class="text-3xl font-bold text-dark-text mb-2">GET IN TOUCH</h2>
+        <p class="text-lg font-light text-subtle-text max-w-lg mb-10">
+            I'm actively seeking new opportunities. Let's connect to discuss how I can leverage my cybersecurity and IT management skills to secure and ensure effectievenss in your business.
+        </p>
+
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+
+            <a
+                href="mailto:farryakubuhalifatu@gmail.com?subject=Inquiry%20from%20Portfolio%20Website&body=Hello%20Halifatu,%0D%0A%0D%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you%20about..."
+                class="flex items-center justify-center space-x-2 px-6 py-3 border-2 border-accent-coral text-accent-coral font-semibold rounded-full transition duration-300 hover:bg-accent-coral/10"
+                target="_blank"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Email me</span>
+            </a>
+
+            <a href="HALIFA'S RESUME.pdf" download class="px-5 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:from-blue-700 hover:to-indigo-700 transition duration-300">
+                Download my CV
+            </a>
+
+            <a href="https://wa.me/233551217600?text=Hello%20Halifatu,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+                target="_blank"
+                class="flex items-center justify-center space-x-2 px-6 py-3 bg-whatsapp-green text-white font-semibold rounded-full shadow-lg transition duration-300 hover:bg-[#1DA951]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12.031 0C5.126 0 0 5.145 0 12.031 0 14.398.665 16.591 1.832 18.441L0 24l5.659-1.579c1.789.988 3.821 1.556 5.68 1.556H12.031C18.921 23.978 24 18.833 24 11.969 24 5.125 18.887 0 12.031 0zm.006 20.841c-1.898 0-3.693-.509-5.267-1.472L5.498 19.34l-1.096 3.996 4.14-1.077-1.782-1.066c-1.523-.907-2.673-2.34-3.415-4.045C3.393 16.51 3.03 14.36 3.03 12.031 3.03 6.78 7.375 2.438 12.037 2.438c2.618 0 5.094 1.014 6.953 2.868 1.86 1.85 2.872 4.326 2.872 6.945 0 5.249-4.345 9.593-9.605 9.593zM18.42 16.732c-.1-.16-.367-.267-.775-.461s-2.522-1.248-2.91-1.385c-.38-.145-.66-.195-.94.195-.27.38-.99 1.385-1.21 1.66s-.44.31-.81.12c-1.55-.769-2.57-1.59-3.41-3.08-1.78-3.078-1.55-2.828-1.09-3.578.43-.728.18-1.378-.09-1.878-.26-.5-.94-.85-1.32-.85-.37 0-.79.03-1.04.03-.25.04-1.03.38-1.42 1.05-.38.67-.99 1.95.1 3.818 1.09 1.878 2.11 3.428 3.92 4.498 3.65 2.17 3.6 2.01 4.25 2.17s2.05.71 2.34.87c.3.17.49.12.87-.29.38-.42.99-1.38 1.25-1.85.25-.49.25-.92.17-1.05z"/>
+                </svg>
+                <span>WhatsApp me</span>
+            </a>
+
+            <a href="https://halifa-tu.github.io/Mychatbot/" target="_blank" 
+                class="px-5 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:from-blue-700 hover:to-indigo-700 transition duration-300">
+                💬 Try my IT Support chatbot
+            </a>
+            <a href="https://tinyurl.com/uwtjkrzx"
+                target="_blank"
+                class="flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-full shadow-lg transition duration-300 hover:from-blue-700 hover:to-blue-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.96 0-1.75-.79-1.75-1.75S5.54 5.21 6.5 5.21s1.75.79 1.75 1.75S7.46 8.71 6.5 8.71zM20 19h-3v-4.91c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V19h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59V19z"/>
+                </svg>
+                <span>Connect on LinkedIn</span>
+            </a>
+        </div>
+
+
+    </section>
+
+
+    </main>
+
+    <footer class="bg-secondary-light py-8 mt-16 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-500 font-medium text-sm">&copy; <span id="current-year"></span> Halifatu Farr Yakubu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dp.js"></script>
+
+</body>
+</html>
