@@ -1,0 +1,86 @@
+/* Custom CSS and Keyframe Animations */
+
+/* Base background and text color switch */
+body {
+    background-color: var(--primary-light);
+    color: var(--dark-text);
+}
+
+/* Custom card hover effect for modern look on a light theme */
+.card-hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(239, 68, 68, 0.1), 0 4px 6px -4px rgba(239, 68, 68, 0.05);
+    border-color: #EF4444; /* Accent highlight */
+}
+
+/* Style for smooth scroll links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Subtle wave background for Hero section to mimic the sample image */
+.hero-bg-wave {
+    background-image: radial-gradient(circle at 50% 100%, #f3f4f6 0%, rgba(255, 255, 255, 0) 60%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 150% 150%;
+}
+
+/* Style for the subtle red heading text in the sample image */
+.subtle-heading {
+    color: #F87171; /* Red 400 - lighter coral */
+}
+
+/* Animation Keyframes and Classes (From the <style> tags in your HTML) */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+}
+
+.animate-slideUp {
+    animation: slideUp 1s ease forwards;
+}
+
+.animate-spin-slow {
+    animation: spinSlow 25s linear infinite;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* The second set of fadeIn keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
